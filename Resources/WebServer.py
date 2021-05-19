@@ -11,7 +11,7 @@ def index():
 def test():
     if request.method == 'GET':
 
-        data = open("PixelData/BadApple.txt",'r').read()
+        data = open("Resources/PixelData/BadApple.txt",'r').read()
         print("SENT")
         #print("SENT >>", data)
         return data

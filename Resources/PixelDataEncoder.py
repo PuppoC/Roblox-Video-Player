@@ -2,7 +2,6 @@ import cv2 as cv
 import time
 import json
 
-
 def rescaleFrame(frame, scale = 0.75):
 
     width = int(frame.shape[1]* scale)
@@ -24,7 +23,6 @@ def getPixelData(videoLocation,resolutionMulti,cFPS,colour):
     prevPercentageCompleted = 0
 
     prevTime = time.time()
-
 
 
     finalTable = []
@@ -102,7 +100,7 @@ def getPixelData(videoLocation,resolutionMulti,cFPS,colour):
 
     return finalTable
 
-pixelData = getPixelData("Videos/BadApple.mp4",.1,24,False)
+pixelData = getPixelData("Resources/Videos/BadApple.mp4",.1,30,False)
 print("Pixel Data Processed")
 
 
@@ -111,7 +109,7 @@ jsonEncoded = json.dumps(pixelData,sort_keys = True)
 print("Encoded")
 
 print("Opening file")
-dumpFile = open("PixelData/BadApple.txt",'w')
+dumpFile = open("Resources/PixelData/BadApple.txt",'w')
 
 print("Writing file")
 dumpFile.write(jsonEncoded)
