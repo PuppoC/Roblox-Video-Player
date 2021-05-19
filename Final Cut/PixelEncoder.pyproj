@@ -31,6 +31,7 @@
     <Folder Include="Videos\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PixelData\BadApple.txt" />
     <Content Include="templates\index.html" />
     <Content Include="Videos\BadApple.mp4" />
   </ItemGroup>

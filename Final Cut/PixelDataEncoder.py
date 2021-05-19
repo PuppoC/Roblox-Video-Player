@@ -109,7 +109,7 @@ def getPixelData(videoLocation,resolutionMulti,cFPS,colour):
 
     return finalTable
 
-pixelData = getPixelData("Videos/BadApple.mp4",.17,-1,False)
+pixelData = getPixelData("Videos/BadApple.mp4",.1,24,False)
 print("Pixel Data Processed")
 
 
